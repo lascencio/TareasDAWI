@@ -7,16 +7,16 @@ import java.io.Serializable;
  */
 
 public class UsuarioBean implements Serializable {
-    private String ID_USUARIO;
+    private int ID_USUARIO;
     private String NOMBRE;
     private String CLAVE_WEB;
     private String NIVEL_ACCESO;
 
-    public String getID_USUARIO() {
+    public int getID_USUARIO() {
         return ID_USUARIO;
     }
 
-    public void setID_USUARIO(String ID_USUARIO) {
+    public void setID_USUARIO(int ID_USUARIO) {
         this.ID_USUARIO = ID_USUARIO;
     }
 

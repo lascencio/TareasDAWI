@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class VentasBean implements Serializable {
-    private String ID_VENTAS;
+    private int ID_VENTAS;
     private String EJERCICIO;
     private String MES;
     private Date FECHA;
@@ -13,11 +13,11 @@ public class VentasBean implements Serializable {
     private int ID_TIPO_VENTA;
     private int ID_FORMA_PAGO;
 
-    public String getID_VENTAS() {
+    public int getID_VENTAS() {
         return ID_VENTAS;
     }
 
-    public void setID_VENTAS(String ID_VENTAS) {
+    public void setID_VENTAS(int ID_VENTAS) {
         this.ID_VENTAS = ID_VENTAS;
     }
 

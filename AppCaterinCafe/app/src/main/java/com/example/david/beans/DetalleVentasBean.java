@@ -7,18 +7,18 @@ import java.io.Serializable;
  */
 
 public class DetalleVentasBean implements Serializable {
-    private String ID_VENTAS;
+    private int ID_VENTAS;
     private String ID_ARTICULO;
     private int CANTIDAD;
     private double PRECIO_UNITARIO;
     private double PRECIO_TOTAL;
     private int ID_ESTADO;
 
-    public String getID_VENTAS() {
+    public int getID_VENTAS() {
         return ID_VENTAS;
     }
 
-    public void setID_VENTAS(String ID_VENTAS) {
+    public void setID_VENTAS(int ID_VENTAS) {
         this.ID_VENTAS = ID_VENTAS;
     }
 

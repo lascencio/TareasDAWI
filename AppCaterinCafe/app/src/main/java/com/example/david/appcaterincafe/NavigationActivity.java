@@ -41,7 +41,6 @@ public class NavigationActivity extends AppCompatActivity implements NavigationV
         mDrawerLayout.addDrawerListener(mToggle);
         mToggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
     }
 
     @Override

@@ -33,9 +33,21 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         iniciarComponentes();
     }
 
+    void validarCampos(){
+        if(edtUser.getText().toString().equals("")){
+            Toast.makeText(this,"Ingrese usuario",Toast.LENGTH_SHORT).show();
+            return;
+        }else if (edtPassword.getText().toString().equals("")){
+            Toast.makeText(this,"Ingrese contraseña",Toast.LENGTH_SHORT).show();
+            return;
+        }
+    }
+
+
     @Override
     public void onClick(View view) {
         if(view == btnLogin){
+            validarCampos();
             String user = edtUser.getText().toString();
             String pass = edtPassword.getText().toString();
             UsuarioDAO dao = new UsuarioDAO(this);

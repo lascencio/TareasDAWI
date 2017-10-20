@@ -6,23 +6,31 @@ import java.io.Serializable;
  * Created by David on 07/10/2017.
  */
 
-public class ClienteBean implements Serializable{
-    private String ID_CLIENTE;
+public class ClienteBean implements Serializable {
+    private int ID_CLIENTE;
     private String NOMBRE;
-    private String APELLIDO;
     private int ID_ESTADO;
     private String USUARIO;
     private String CLAVE;
     private double SALDO;
-    private String INDICA_AUTORIZA;
+    private int INDICA_AUTORIZA;
     private String FECHA_REGISTRO;
     private String FECHA_MODIFICA;
+    private int ID_CARGO;
 
-    public String getID_CLIENTE() {
+    public int getID_CARGO() {
+        return ID_CARGO;
+    }
+
+    public void setID_CARGO(int ID_CARGO) {
+        this.ID_CARGO = ID_CARGO;
+    }
+
+    public int getID_CLIENTE() {
         return ID_CLIENTE;
     }
 
-    public void setID_CLIENTE(String ID_CLIENTE) {
+    public void setID_CLIENTE(int ID_CLIENTE) {
         this.ID_CLIENTE = ID_CLIENTE;
     }
 
@@ -34,13 +42,6 @@ public class ClienteBean implements Serializable{
         this.NOMBRE = NOMBRE;
     }
 
-    public String getAPELLIDO() {
-        return APELLIDO;
-    }
-
-    public void setAPELLIDO(String APELLIDO) {
-        this.APELLIDO = APELLIDO;
-    }
 
     public int getID_ESTADO() {
         return ID_ESTADO;
@@ -74,11 +75,11 @@ public class ClienteBean implements Serializable{
         this.SALDO = SALDO;
     }
 
-    public String getINDICA_AUTORIZA() {
+    public int getINDICA_AUTORIZA() {
         return INDICA_AUTORIZA;
     }
 
-    public void setINDICA_AUTORIZA(String INDICA_AUTORIZA) {
+    public void setINDICA_AUTORIZA(int INDICA_AUTORIZA) {
         this.INDICA_AUTORIZA = INDICA_AUTORIZA;
     }
 

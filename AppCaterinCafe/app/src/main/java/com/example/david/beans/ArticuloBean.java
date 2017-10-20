@@ -8,7 +8,7 @@ import java.util.Date;
  */
 
 public class ArticuloBean implements Serializable {
-    private String ID_ARTICULO;
+    private int ID_ARTICULO;
     private String DESCRIPCION;
     private String FAMILIA;
     private int ID_ESTADO;
@@ -21,11 +21,11 @@ public class ArticuloBean implements Serializable {
     private Date FECHA_MODIFICA;
     private String RUTA_IMAGEN;
 
-    public String getID_ARTICULO() {
+    public int getID_ARTICULO() {
         return ID_ARTICULO;
     }
 
-    public void setID_ARTICULO(String ID_ARTICULO) {
+    public void setID_ARTICULO(int ID_ARTICULO) {
         this.ID_ARTICULO = ID_ARTICULO;
     }
 
