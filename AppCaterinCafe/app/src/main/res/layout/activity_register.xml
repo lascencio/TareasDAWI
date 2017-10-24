@@ -5,6 +5,10 @@
     android:layout_height="match_parent"
     tools:context="com.example.david.appcaterincafe.RegisterActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -25,10 +29,19 @@
             <TextView
                 style="@style/textView_style"
                 android:paddingTop="20dp"
-                android:text="Nombre y Apellido" />
+                android:text="Nombres" />
 
             <EditText
                 android:id="@+id/edtNomApe"
+                style="@style/editText_style" />
+
+            <TextView
+                style="@style/textView_style"
+                android:paddingTop="10dp"
+                android:text="Apellidos" />
+
+            <EditText
+                android:id="@+id/edtApellido"
                 style="@style/editText_style" />
 
             <TextView
@@ -111,4 +124,8 @@
                 style="@style/button_style"
                 android:text="REGISTRAR" />
         </LinearLayout>
+
+    </ScrollView>
+
+
 </RelativeLayout>

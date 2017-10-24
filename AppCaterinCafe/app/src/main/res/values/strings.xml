@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name"> </string>
+    <string name="app_name">Catering</string>
     <string name="principal">Menú Principal</string>
     <string name="login_username">Ingrese usuario</string>
     <string name="login_password">Ingrese contraseña</string>
