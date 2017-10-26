@@ -1,20 +1,21 @@
 package com.example.david.beans;
 
-public class CargosBean {
-    private int ID_CARGO;
+public class NivelesBean {
+
+    private int ID_NIVEL_ACCESO;
     private String DESCRIPCION;
+
+    public int getID_NIVEL_ACCESO() {
+        return ID_NIVEL_ACCESO;
+    }
 
     @Override
     public String toString() {
         return DESCRIPCION;
     }
 
-    public int getID_CARGO() {
-        return ID_CARGO;
-    }
-
-    public void setID_CARGO(int ID_CARGO) {
-        this.ID_CARGO = ID_CARGO;
+    public void setID_NIVEL_ACCESO(int ID_NIVEL_ACCESO) {
+        this.ID_NIVEL_ACCESO = ID_NIVEL_ACCESO;
     }
 
     public String getDESCRIPCION() {

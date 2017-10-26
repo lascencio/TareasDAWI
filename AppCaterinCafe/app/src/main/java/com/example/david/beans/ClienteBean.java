@@ -1,22 +1,37 @@
 package com.example.david.beans;
 
 import java.io.Serializable;
-
-/**
- * Created by David on 07/10/2017.
- */
+import java.util.Date;
 
 public class ClienteBean implements Serializable {
-    private int ID_CLIENTE;
+    private String ID_CLIENTE;
     private String NOMBRE;
-    private int ID_ESTADO;
+    private String APELLIDO;
+    private String ID_ESTADO;
     private String USUARIO;
+    private String CORREO;
     private String CLAVE;
     private double SALDO;
     private int INDICA_AUTORIZA;
     private String FECHA_REGISTRO;
     private String FECHA_MODIFICA;
     private int ID_CARGO;
+
+    public String getCORREO() {
+        return CORREO;
+    }
+
+    public String getAPELLIDO() {
+        return APELLIDO;
+    }
+
+    public void setAPELLIDO(String APELLIDO) {
+        this.APELLIDO = APELLIDO;
+    }
+
+    public void setCORREO(String CORREO) {
+        this.CORREO = CORREO;
+    }
 
     public int getID_CARGO() {
         return ID_CARGO;
@@ -26,11 +41,11 @@ public class ClienteBean implements Serializable {
         this.ID_CARGO = ID_CARGO;
     }
 
-    public int getID_CLIENTE() {
+    public String getID_CLIENTE() {
         return ID_CLIENTE;
     }
 
-    public void setID_CLIENTE(int ID_CLIENTE) {
+    public void setID_CLIENTE(String ID_CLIENTE) {
         this.ID_CLIENTE = ID_CLIENTE;
     }
 
@@ -43,11 +58,11 @@ public class ClienteBean implements Serializable {
     }
 
 
-    public int getID_ESTADO() {
+    public String getID_ESTADO() {
         return ID_ESTADO;
     }
 
-    public void setID_ESTADO(int ID_ESTADO) {
+    public void setID_ESTADO(String ID_ESTADO) {
         this.ID_ESTADO = ID_ESTADO;
     }
 

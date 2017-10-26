@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/buy_now" android:title="Registrar Producto" android:icon="@drawable/ic_my_buys"/>
+<item android:id="@+id/user_register" android:title="Registrar Usuario" android:icon="@drawable/ic_portafolio"/>
+<item android:id="@+id/pedidos_pendientes" android:title="Pedidos Pendientes" android:icon="@drawable/ic_debt"/>
+<item android:id="@+id/reporte_pedidos" android:title="Reporte de Pedidos" android:icon="@drawable/ic_if_user_profile_103780"/>
+    <item android:id="@+id/logout" android:title="Logout" android:icon="@drawable/ic_logout"/>
+</menu>

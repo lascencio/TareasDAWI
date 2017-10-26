@@ -3,12 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
     tools:context="com.example.david.appcaterincafe.RegisterActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -18,13 +19,8 @@
             tools:layout_editor_absoluteY="8dp">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="REGISTRATE"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                style="@style/tittles_style"
+                android:text="REGISTRATE"/>
 
             <TextView
                 style="@style/textView_style"
@@ -32,42 +28,40 @@
                 android:text="Nombres" />
 
             <EditText
-                android:id="@+id/edtNomApe"
-                style="@style/editText_style" />
+                android:id="@+id/edtNombre"
+                style="@style/editText_style"
+                android:hint="Ingrese Nombre"/>
 
             <TextView
                 style="@style/textView_style"
-                android:paddingTop="10dp"
                 android:text="Apellidos" />
 
             <EditText
                 android:id="@+id/edtApellido"
-                style="@style/editText_style" />
+                style="@style/editText_style"
+                android:hint="Ingrese Apellidos"/>
 
             <TextView
                 style="@style/textView_style"
-                android:text="Correo Electrónico" />
+                android:text="Correo Electrónico"
+               />
 
             <EditText
                 android:id="@+id/edtCorreo"
-                style="@style/editText_style" />
+                style="@style/editText_style"
+                android:hint="Ingrese Correo Electrónico"/>
 
-            <TextView
-                style="@style/textView_style"
-                android:text="Usuario" />
-
-            <EditText
-                android:id="@+id/edtUsuario"
-                style="@style/editText_style" />
 
             <TextView
                 style="@style/textView_style"
                 android:text="Clave"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                />
 
             <EditText
                 android:id="@+id/edtClave"
-                style="@style/editText_style" />
+                style="@style/editText_style"
+                android:hint="Ingrese Contraseña"/>
 
             <TextView
                 style="@style/textView_style"
@@ -94,38 +88,25 @@
                 <RadioButton
                     android:id="@+id/rbtSi"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingRight="10dp"
                     android:text="SI"
-                    android:textColor="#010101"
-                    android:textSize="15dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
 
                 <RadioButton
                     android:id="@+id/rbtNo"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="NO"
-                    android:textColor="#010101"
-                    android:textSize="15dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+
             </RadioGroup>
 
             <Button
                 android:id="@+id/btnRegister"
                 style="@style/button_style"
-                android:text="REGISTRAR" />
+                android:text="REGISTRARSE" />
         </LinearLayout>
-
-    </ScrollView>
-
-
+        </ScrollView>
 </RelativeLayout>
